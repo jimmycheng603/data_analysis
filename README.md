@@ -1,15 +1,14 @@
 data_analysis
 =
-
 1.scripts/stats.py（数据分析脚本）
 -
-####⋅⋅* 使用方法</br>
+####1) 使用方法</br>
 python  scripts/stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
 
-####⋅⋅* 使用例子</br>
+####2) 使用例子</br>
 python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
-####⋅⋅* 参数解释</br>
+####3) 参数解释</br>
 输入dataframe</br>
 <table>
 <tr><td></td><td>UserId</td><td>age</td></tr>
@@ -17,7 +16,7 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 <tr><td colspan="3">...</td></tr>
 </table>
 
-输出dataframe(字段解释清移步wiki)</br>
+输出dataframe[列名解释](scripts/explain.png)</br>
 <table>
 <tr>
 <td>age</td><td>cnt_rec</td><td>cnt_target</td>
@@ -35,15 +34,15 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 </table>
 
 
-2)scripts/woe.py（计算**woe**和**iv**脚本）</br>
+2.scripts/woe.py（计算**woe**和**iv**脚本）</br>
 -
-####1.使用方法</br>
+####1)使用方法</br>
 python  scripts/woe.py    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
 
-####2.使用例子</br>
+####2)使用例子</br>
 python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
 
-####3.参数解释</br>
+####3)参数解释</br>
 输入dataframe</br>
 <table>
 <tr><td></td><td>UserId</td><td>age</td><td>is_dft</td></tr>
