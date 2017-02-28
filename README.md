@@ -9,7 +9,7 @@ python  scripts/stats.py    输入dataframe所在csv    输出dataframe所在c
 python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
 3.参数解释</br>
-输入dataframe
+输入dataframe</br>
 	UserId	age
 0	27226838	22
 1	28297563	30
@@ -20,7 +20,7 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 6	28769069	28
 ...
 
-输出dataframe(字段解释清移步wiki)
+输出dataframe(字段解释清移步wiki)</br>
 age,cnt_rec,cnt_target,%target,%cnt_rec,%cnt_target,%cum_cnt_rec,%cum_cnt_target,cnt_nontarget,%cnt_nontarget,%cum_nontarget,%cum_target-%cum_nontarget
 18,110,9.0,8.18%,0.36%,0.53%,0.36%,0.53%,101.0,0.35%,0.35%,0.18%
 19,479,22.0,4.59%,1.57%,1.30%,1.93%,1.84%,457.0,1.59%,1.94%,-0.28%
@@ -39,7 +39,7 @@ python  scripts/woe.py    输入dataframe所在csv    待分析特征变量  
 python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
 
 3.参数解释</br>
-输入dataframe
+输入dataframe</br>
 	UserId	       age     is_dft
 0	27226838	22     1 
 1	28297563	30     1
@@ -50,7 +50,7 @@ python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
 6	28769069	28     1
 ...
 
-输出结果
+输出结果</br>
       class  good    bad  %good    %bad    all      woe        iv
 0  (0,20.0]    76   1519  4.76%  95.24%   1595 -6.34584  0.048765
 1   (20,30]   895  17129  4.97%  95.03%  18024 -8.75549  0.561679
