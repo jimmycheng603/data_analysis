@@ -1,16 +1,16 @@
 # data_analysis
-数据分析
 
 1)scripts/stats.py（数据分析脚本）</br>
-1.使用方法</br>
+-
+####1.使用方法</br>
 python  scripts/stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
 
-2.使用例子</br>
+####2.使用例子</br>
 python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
-3.参数解释</br>
+####3.参数解释</br>
 输入dataframe</br>
-	UserId	age         </br>
+	UserId	    age         </br>
 0	27226838	22  </br>
 1	28297563	30   </br>
 2	27951286	27  </br>
@@ -31,14 +31,15 @@ age,cnt_rec,cnt_target,%target,%cnt_rec,%cnt_target,%cum_cnt_rec,%cum_cnt_target
 24,1931,118.0,6.11%,6.33%,6.99%,29.44%,25.00%,1813.0,6.29%,29.72%,0.70%</br>
 
 
-)scripts/woe.py（计算woe和iv脚本）</br>
-1.使用方法</br>
+2)scripts/woe.py（计算woe和iv脚本）</br>
+-
+####1.使用方法</br>
 python  scripts/woe.py    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
 
-2.使用例子</br>
+####2.使用例子</br>
 python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
 
-3.参数解释</br>
+####3.参数解释</br>
 输入dataframe</br>
 	UserId	       age     is_dft</br>
 0	27226838	22     1 </br>
