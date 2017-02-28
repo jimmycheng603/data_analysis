@@ -3,10 +3,10 @@
 
 1)scripts/stats.py（数据分析脚本）</br>
 1.使用方法</br>
-python  stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
+python  scripts/stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
 
 2.使用例子</br>
-python  stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
+python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
 3.参数解释</br>
 输入dataframe
@@ -29,3 +29,32 @@ age,cnt_rec,cnt_target,%target,%cnt_rec,%cnt_target,%cum_cnt_rec,%cum_cnt_target
 22,1825,69.0,3.78%,5.98%,4.09%,17.00%,13.15%,1756.0,6.10%,17.23%,-2.01%
 23,1865,82.0,4.40%,6.11%,4.86%,23.11%,18.01%,1783.0,6.19%,23.42%,-1.33%
 24,1931,118.0,6.11%,6.33%,6.99%,29.44%,25.00%,1813.0,6.29%,29.72%,0.70%
+
+
+)scripts/woe.py（计算woe和iv脚本）</br>
+1.使用方法</br>
+python  scripts/woe.py    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
+
+2.使用例子</br>
+python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
+
+3.参数解释</br>
+输入dataframe
+	UserId	       age     is_dft
+0	27226838	22     1 
+1	28297563	30     1
+2	27951286	27     0
+3	27865599	24     1
+4	2042801	        27     0
+5	28624643	37     1
+6	28769069	28     1
+...
+
+输出结果
+      class  good    bad  %good    %bad    all      woe        iv
+0  (0,20.0]    76   1519  4.76%  95.24%   1595 -6.34584  0.048765
+1   (20,30]   895  17129  4.97%  95.03%  18024 -8.75549  0.561679
+2   (30,45]   673  10021  6.29%  93.71%  10694  7.31007  0.372628
+3   (45...)    75    869  7.94%  92.06%    944  2.57974  0.036832
+4        NA     0      0   nan%    nan%      0      NaN  0.000000
+             1688  28819  5.53%  94.47%  30507           1.019905
