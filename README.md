@@ -15,7 +15,7 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 <tr><td>0</td><td>27226838</td><td>22</td></tr>
 <tr><td colspan="3">...</td></tr>
 </table>
-
+![baidu](scripts/explain.png "百度logo")
 输出dataframe[列名解释](scripts/explain.png)</br>
 <table>
 <tr>
