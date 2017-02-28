@@ -13,6 +13,8 @@ python  scripts/**stats.py**    'd:\age.csv'    'd:\output.csv'    'age'</br>
 <table>
 <tr><td></td><td>UserId</td><td>age</td></tr>
 <tr><td>0</td><td>27226838</td><td>22</td></tr>
+<tr><td>0</td><td>17126415</td><td>34</td></tr>
+<tr><td>0</td><td>47526334</td><td>56</td></tr>
 <tr><td colspan="3">...</td></tr>
 </table>
 ![列名解释](scripts/explain.png "列名解释")</br>
