@@ -3,10 +3,10 @@ data_analysis
 1.scripts/stats.py（数据分析脚本）
 -
 ####1) 使用方法</br>
-python  scripts/stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
+python  scripts/**stats.py**    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
 
 ####2) 使用例子</br>
-python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
+python  scripts/**stats.py**    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
 ####3) 参数解释</br>
 输入dataframe</br>
@@ -15,8 +15,8 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 <tr><td>0</td><td>27226838</td><td>22</td></tr>
 <tr><td colspan="3">...</td></tr>
 </table>
-![baidu](scripts/explain.png "百度logo")
-输出dataframe[列名解释](scripts/explain.png)</br>
+![列名解释](scripts/explain.png "列名解释")</br>
+输出dataframe
 <table>
 <tr>
 <td>age</td><td>cnt_rec</td><td>cnt_target</td>
@@ -34,13 +34,13 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 </table>
 
 
-2.scripts/woe.py（计算**woe**和**iv**脚本）</br>
+2.scripts/woe.py（计算[woe](https://www.google.com.hk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=0ahUKEwjkiYvvvLLSAhXEp5QKHZXxCPcQFghKMAc&url=http%3A%2F%2Fwww.listendata.com%2F2015%2F03%2Fweight-of-evidence-woe-and-information.html&usg=AFQjCNFSOMXCC82266M40O_WCP84PLgBgw)和[iv](https://www.google.com.hk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=0ahUKEwjkiYvvvLLSAhXEp5QKHZXxCPcQFghKMAc&url=http%3A%2F%2Fwww.listendata.com%2F2015%2F03%2Fweight-of-evidence-woe-and-information.html&usg=AFQjCNFSOMXCC82266M40O_WCP84PLgBgw)脚本）</br>
 -
 ####1)使用方法</br>
-python  scripts/woe.py    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
+python  scripts/**woe.py**    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
 
 ####2)使用例子</br>
-python  scripts/woe.py    "age.csv" "age" "20,30,45" "is_dft"</br>
+python  scripts/**woe.py**    "age.csv" "age" "20,30,45" "is_dft"</br>
 
 ####3)参数解释</br>
 输入dataframe</br>
