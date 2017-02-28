@@ -1,14 +1,14 @@
 # data_analysis
 数据分析
 
-1)scripts/stats.py（数据分析脚本）
-1.使用方法
-python  stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量
+1)scripts/stats.py（数据分析脚本）</br>
+1.使用方法</br>
+python  stats.py    输入dataframe所在csv    输出dataframe所在csv    待分析特征变量</br>
 
-2.使用例子
-python  stats.py    'd:\age.csv'    'd:\output.csv'    'age'
+2.使用例子</br>
+python  stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
-3.参数解释
+3.参数解释</br>
 输入dataframe
 	UserId	age
 0	27226838	22
