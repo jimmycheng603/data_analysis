@@ -10,15 +10,14 @@ python  scripts/stats.py    'd:\age.csv'    'd:\output.csv'    'age'</br>
 
 ####3.参数解释</br>
 输入dataframe</br>
-	UserId	    age         </br>
-0	27226838	22  </br>
-1	28297563	30   </br>
-2	27951286	27  </br>
-3	27865599	24  </br>
-4	2042801	        27  </br>
-5	28624643	37   </br>
-6	28769069	28</br>
-...  </br>
+<table>
+<tr><td></td><td>UserId</td><td>age</td></tr>
+<tr><td>0</td><td>27226838</td><td>22</td></tr>
+<tr><td>1</td><td>28297563</td><td>30</td></tr>
+<tr><td>2</td><td>27951286</td><td>27</td></tr>
+<tr><td>3</td><td>27865599</td><td>24</td></tr>
+<tr><td colspan="3">...</td></tr>
+</table>
 
 输出dataframe(字段解释清移步wiki)</br>
 age,cnt_rec,cnt_target,%target,%cnt_rec,%cnt_target,%cum_cnt_rec,%cum_cnt_target,cnt_nontarget,%cnt_nontarget,%cum_nontarget,%cum_target-%cum_nontarget </br>
