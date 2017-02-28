@@ -36,7 +36,7 @@ python  scripts/**stats.py**    'd:\age.csv'    'd:\output.csv'    'age'</br>
 </table>
 
 
-2.scripts/woe.py（计算[woe](https://www.google.com.hk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=0ahUKEwjkiYvvvLLSAhXEp5QKHZXxCPcQFghKMAc&url=http%3A%2F%2Fwww.listendata.com%2F2015%2F03%2Fweight-of-evidence-woe-and-information.html&usg=AFQjCNFSOMXCC82266M40O_WCP84PLgBgw)和[iv](https://www.google.com.hk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=8&cad=rja&uact=8&ved=0ahUKEwjkiYvvvLLSAhXEp5QKHZXxCPcQFghKMAc&url=http%3A%2F%2Fwww.listendata.com%2F2015%2F03%2Fweight-of-evidence-woe-and-information.html&usg=AFQjCNFSOMXCC82266M40O_WCP84PLgBgw)脚本）</br>
+2.scripts/woe.py（计算[woe](http://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html)和[iv](http://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html)脚本）</br>
 -
 ####1)使用方法</br>
 python  scripts/**woe.py**    输入dataframe所在csv    待分析特征变量   分段表达式（用逗号连接）  y变量</br>
